@@ -212,6 +212,8 @@ p {
   /* identical to box height, or 188% */
   text-align: center;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -278,7 +280,7 @@ p {
 
 .button:focus {
   color: var(--main-color-white);
-  background-color: var(--hero-color);
+  background-color: var(--hero-color);;
 }
 .button:hover {
   cursor: pointer;
@@ -636,7 +638,8 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.between-photo:hover .overlay-photo {
+.mama:hover .overlay-photo,  
+.mama:focus .overlay-photo {
   transform: translateY(0);
 }
 
